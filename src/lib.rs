@@ -116,9 +116,9 @@ impl<'a> Inspect<'a> for Transform {
 			ui.drag_float3(imgui::im_str!("translation##transform{:?}", entity), &mut v)
 				.speed(0.1)
 				.build();
-			self.set_x(v[0]);
-			self.set_y(v[1]);
-			self.set_z(v[2]);
+			me.set_x(v[0]);
+			me.set_y(v[1]);
+			me.set_z(v[2]);
 		}
 
 		{
@@ -132,7 +132,7 @@ impl<'a> Inspect<'a> for Transform {
 			)
 			.speed(0.25)
 			.build();
-			self.set_rotation_euler(0., 0., rotation.to_radians());
+			me.set_rotation_euler(0., 0., rotation.to_radians());
 		}
 
 		{

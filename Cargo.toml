@@ -8,3 +8,4 @@ amethyst = "0.10"
 amethyst-imgui = { git = "https://github.com/awpteamoose/amethyst-imgui.git", branch = "amethyst-v0.10" }
 matches = "0.1.8"
 paste = "0.1.5"
+automod = { git = "https://github.com/Awpteamoose/automod" }

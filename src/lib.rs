@@ -84,7 +84,7 @@ macro_rules! inspector {
 
 								if ui.small_button(imgui::im_str!("make child##inspector{:?}", entity)) {
 									lazy.create_entity(&entities)
-										.with(amethyst::core::transform::Parent::new(entity))
+										.with(amethyst::core::transform::Parent { entity })
 										.build();
 								}
 								ui.same_line(0.);

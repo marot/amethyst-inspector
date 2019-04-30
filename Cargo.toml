@@ -6,6 +6,8 @@ edition = "2018"
 [dependencies]
 amethyst = "0.10"
 amethyst-imgui = { git = "https://github.com/awpteamoose/amethyst-imgui.git", branch = "amethyst-v0.10" }
-matches = "0.1.8"
-paste = "0.1.5"
+amethyst-inspector-derive = { path = "amethyst-inspector-derive" }
+matches = "0.1"
+paste = "0.1"
 automod = { git = "https://github.com/Awpteamoose/automod" }
+specs-derive = "0.4"
